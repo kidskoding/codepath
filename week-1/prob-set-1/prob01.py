@@ -1,10 +1,7 @@
-def prob01() -> None:
+def welcome() -> None:
     # print to console
     
     # Time: O(1)
     # Space: O(1)
-   
-    def welcome() -> None:
-        print('Welcome to Hundred Acre Wood!')
 
-    welcome()
+    print("Welcome to Hundred Acre Wood!")

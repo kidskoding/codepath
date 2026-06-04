@@ -1,5 +1,5 @@
 def main():
-    print("Hello from codepath!")
+    pass
 
 if __name__ == "__main__":
     main()

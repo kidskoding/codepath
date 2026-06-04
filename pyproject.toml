@@ -4,4 +4,22 @@ version = "0.1.0"
 description = "codepath problem sets"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pytest>=9.0.3",
+]
+
+[tool.basedpyright]
+executionEnvironments = [
+    { root = "week-1", extraPaths = ["week-1/prob-set-1", "week-1/prob-set-2"] },
+    { root = "week-2", extraPaths = ["week-2/prob-set-1", "week-2/prob-set-2"] },
+    { root = "week-3", extraPaths = ["week-3/prob-set-1", "week-3/prob-set-2"] },
+    { root = "week-4", extraPaths = ["week-4/prob-set-1", "week-4/prob-set-2"] },
+    { root = "week-5", extraPaths = ["week-5/prob-set-1", "week-5/prob-set-2"] },
+    { root = "week-6", extraPaths = ["week-6/prob-set-1", "week-6/prob-set-2"] },
+    { root = "week-7", extraPaths = ["week-7/prob-set-1", "week-7/prob-set-2"] },
+    { root = "week-8", extraPaths = ["week-8/prob-set-1", "week-8/prob-set-2"] },
+    { root = "week-9", extraPaths = ["week-9/prob-set-1", "week-9/prob-set-2"] },
+    { root = "week-10", extraPaths = ["week-10/prob-set-1", "week-10/prob-set-2"] },
+    { root = "week-11", extraPaths = ["week-11/prob-set-1", "week-11/prob-set-2"] },
+    { root = "week-12", extraPaths = ["week-12/prob-set-1", "week-12/prob-set-2"] },
+]
