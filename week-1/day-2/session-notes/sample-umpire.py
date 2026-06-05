@@ -1,51 +1,57 @@
-'''
+"""
 
 Write a function nanana_batman() that accepts an integer x
 and prints the string "nanana batman!" where "na" is repeated x times.
+Do not use the * operator.
 
-How to solve via UMPIRE (Understand, Match, Plan, Implement, Review, Evaluate)
-
-UNDERSTAND (U):
-    * Input: an integer x
-    * Output: a string "nanana batman!" where "na" is repeated x times
+UNDERSTAND:
+    * Input: integer x
+    * Output: string "nanana batman!" where "na" is repeated x times
 
     * questions about the problem?
 
     * edge cases?
-        - negative numbers, floating point numbers
-        - string -> print("error! invalid input")
-        - large numbers
-        - 0 --> ("batman!")
-        - non-numeric
-
-MATCH (M):  * similar problems?
-
-PLAN (P):
-    1. validate the input
-    2. initialize the result string
-    3. use a for loop that runs x times
-    4. add "na" x times to result
-    5. check if result is empty, if yes add "batman!" else add " batman!"
-
-IMPLEMENT (I):
+    - x < 0 (negative numbers), null, None, invalid data type (string) --> print("error: invalid input")
+    - x = 0     (should print "batman!")
+    - large numbers
 
 
-REVIEW (R):
-    
+MATCH:    * similar problems?
 
-EVALUATE (E):
-    
-'''
+PLAN
+1. validate input
+2. initialize result as empty string
+3. init a for loop that runs x times and adds "na" to result in each iteration
+4. check if x is 0, if so return "batman!"
+5. add " batman!" to result and return result
+
+IMPLEMENT:
+- see below
+
+REVIEW:
+- will do next class
+
+EVALUATE:
+    * runtime and complexity? (will do next class)
+
+
+"""
+
 
 ## IMPLEMENT
-def nanana_batman(x: int) -> str:
+def nanana_batman(x):
     result = ""
 
     if x < 0:
-        return "error! invalid input"
-    for i in range(x):
+        return("error!")
+
+    for _ in range(x):
         result += "na"
     if result:
-        return result + " batman!"
+        return(result+ " batman!")
     else:
-        return "batman!"
+        return("batman!")
+
+
+## TESTS
+print(nanana_batman(-10))
