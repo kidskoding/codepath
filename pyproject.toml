@@ -10,16 +10,16 @@ dependencies = [
 
 [tool.basedpyright]
 executionEnvironments = [
-    { root = "week-1", extraPaths = ["week-1/day-1/prob-set-1", "week-1/day-1/prob-set-2"] },
-    { root = "week-2", extraPaths = ["week-2/day-1/prob-set-1", "week-2/day-1/prob-set-2"] },
-    { root = "week-3", extraPaths = ["week-3/day-1/prob-set-1", "week-3/day-1/prob-set-2"] },
-    { root = "week-4", extraPaths = ["week-4/day-1/prob-set-1", "week-4/day-1/prob-set-2"] },
-    { root = "week-5", extraPaths = ["week-5/day-1/prob-set-1", "week-5/day-1/prob-set-2"] },
-    { root = "week-6", extraPaths = ["week-6/day-1/prob-set-1", "week-6/day-1/prob-set-2"] },
-    { root = "week-7", extraPaths = ["week-7/day-1/prob-set-1", "week-7/day-1/prob-set-2"] },
-    { root = "week-8", extraPaths = ["week-8/day-1/prob-set-1", "week-8/day-1/prob-set-2"] },
-    { root = "week-9", extraPaths = ["week-9/day-1/prob-set-1", "week-9/day-1/prob-set-2"] },
-    { root = "week-10", extraPaths = ["week-10/day-1/prob-set-1", "week-10/day-1/prob-set-2"] },
-    { root = "week-11", extraPaths = ["week-11/day-1/prob-set-1", "week-11/day-1/prob-set-2"] },
-    { root = "week-12", extraPaths = ["week-12/day-1/prob-set-1", "week-12/day-1/prob-set-2"] },
+    { root = "week-01", extraPaths = ["week-01/day-01/prob-set-01", "week-01/day-01/prob-set-02"] },
+    { root = "week-02", extraPaths = ["week-02/day-01/prob-set-01", "week-02/day-01/prob-set-02"] },
+    { root = "week-03", extraPaths = ["week-03/day-01/prob-set-01", "week-03/day-01/prob-set-02"] },
+    { root = "week-04", extraPaths = ["week-04/day-01/prob-set-01", "week-04/day-01/prob-set-02"] },
+    { root = "week-05", extraPaths = ["week-05/day-01/prob-set-01", "week-05/day-01/prob-set-02"] },
+    { root = "week-06", extraPaths = ["week-06/day-01/prob-set-01", "week-06/day-01/prob-set-02"] },
+    { root = "week-07", extraPaths = ["week-07/day-01/prob-set-01", "week-07/day-01/prob-set-02"] },
+    { root = "week-08", extraPaths = ["week-08/day-01/prob-set-01", "week-08/day-01/prob-set-02"] },
+    { root = "week-09", extraPaths = ["week-09/day-01/prob-set-01", "week-09/day-01/prob-set-02"] },
+    { root = "week-10", extraPaths = ["week-10/day-01/prob-set-01", "week-10/day-01/prob-set-02"] },
+    { root = "week-11", extraPaths = ["week-11/day-01/prob-set-01", "week-11/day-01/prob-set-02"] },
+    { root = "week-12", extraPaths = ["week-12/day-01/prob-set-01", "week-12/day-01/prob-set-02"] },
 ]
