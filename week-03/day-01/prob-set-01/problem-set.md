@@ -1,11 +1,10 @@
-# Problem Set: Stacks, Queues & Two Pointers — Week 2, Day 1
+# Problem Set: Stacks, Queues & Two Pointers — Week 3, Day 1
 
 ---
 
 ## Problem 1: Post Format Validator
 
-**Difficulty:** Medium  
-**Topic:** Stacks
+**Difficulty:** Medium
 
 ### Description
 
@@ -42,17 +41,11 @@ Input:  "(]"
 Output: False
 ```
 
-### Hints
-
-> **AI Hint:** Use a stack.  
-> **Hint:** Think about what to push onto the stack when you see an opening tag, and what to check when you see a closing tag.
-
 ---
 
 ## Problem 2: Reverse User Comments Queue
 
-**Difficulty:** Medium  
-**Topic:** Stacks / Queues
+**Difficulty:** Medium
 
 ### Description
 
@@ -84,7 +77,6 @@ Output: ['Well written.', 'Interesting read.', 'First!']
 ## Problem 3: Check Symmetry in Post Titles
 
 **Difficulty:** Medium  
-**Topic:** Two Pointers
 
 ### Description
 
@@ -111,16 +103,11 @@ Input:  "Social Media"
 Output: False
 ```
 
-### Hints
-
-> **Hint:** Two Pointer Technique — use one pointer starting at each end, moving inward while skipping non-alphanumeric characters.
-
 ---
 
-## Problem 4: Engagement Boost
+## Problem 4: Engagement Boost - SKIP
 
 **Difficulty:** Medium  
-**Topic:** Two Pointers / Sorting
 
 ### Description
 
@@ -177,8 +164,7 @@ Output: [4, 9, 9, 49, 121]
 
 ## Problem 5: Content Cleaner
 
-**Difficulty:** Medium  
-**Topic:** Stacks
+**Difficulty:** Medium
 
 ### Description
 
@@ -213,21 +199,15 @@ Input:  "s"
 Output: "s"
 ```
 
-### Hints
-
-> **Hint:** Think about which data structure lets you efficiently check and remove the most recently seen character.  
-> **Hint:** Python's `str.islower()`, `str.isupper()`, and `str.lower()` may be useful.
-
 ---
 
 ## Problem 6: Post Editor
 
 **Difficulty:** Easy  
-**Topic:** Queues
 
 ### Description
 
-You want to add a creative twist to your posts by reversing the order of characters in each word while still preserving whitespace and the original word order. Given a string `post`, use a queue to reverse the order of characters in each word within the sentence.
+You want to add a creative twist to your posts by reversing the order of characters in each word while still preserving whitespace and the original word order. Given a string `post`, reverse the order of characters in each word within the sentence.
 
 ### Function Signature
 
@@ -250,16 +230,11 @@ Input:  "Check out my latest vlog"
 Output: "kcehC tuo ym tseval golv"
 ```
 
-### Hints
-
-> **AI Hint:** Use a queue to process characters in each word.
-
 ---
 
 ## Problem 7: Post Compare
 
-**Difficulty:** Medium  
-**Topic:** Stacks / Simulation
+**Difficulty:** Medium / Simulation
 
 ### Description
 

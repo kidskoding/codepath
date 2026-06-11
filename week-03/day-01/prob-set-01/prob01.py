@@ -1,27 +1,30 @@
-# Input: A string containing open and closed parentheses
-# Output: A boolean that determines if the string is valid parentheses/brackets
+'''
+    Input: A string, called posts, that contains the necessary post metadata
+    Output: A boolean that determines whether or not the input posts string was formatted properly
 
-# 1. Create a dictionary containing the open and closing brackets, 
-# where the keys will be closing brackets and the values will be the opening brackets
-# 2. Create a stack that will track the ordering bracket types
-# 3. Check if your current character is a key in the map (closing bracket) and if so, pop the top element from the stack
-# 4. Check if stack is empty by end of the process and if so return True, otherwise False
-# 
-# Time: O(n)
-# Space: O(n)
+    1. Create a dictionary that will contain the valid pairings of open (values) and closed (keys) brackets of all types (square, curly, etc.)
+    2. Use a stack to track the top most character visited in the posts input string
+    3. Loop through the characters in the input posts string
+        4. Check for dictionary membership (keys)
+        5. Check if we have elements in our stack (cannot get elements from a stack if empty). If not, return False immediately
+        6. Pop the topmost element from stack and check if there is a valid open and close bracket pair. If not, return False immediately because a valid pairing of brackets is impossible
+    7. Return True if stack is empty, otherwise return False
+
+    Time: O(n)
+    Space: O(n)
+'''
 
 def is_valid_post_format(posts: str) -> bool:
-    bracket_map = {')': '(', '}': '{', ']': '['}
-    stack: list[str] = []
-    for post in posts:
-        if post in bracket_map:
+    brackets_dict = {')': '(', ']': '[', '}': '{'}
+    stack = []
+
+    for ch in posts:
+        if ch in brackets_dict:
             if not stack:
                 return False
-            
+
             top = stack.pop()
-            if bracket_map[post] != top:
+            if top != brackets_dict[ch]:
                 return False
-        else:
-            stack.append(post)
 
     return not stack

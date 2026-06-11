@@ -26,8 +26,7 @@ Ask user if path is unclear.
 
 ## Problem N: [Title]
 
-**Difficulty:** Easy / Medium / Hard  
-**Topic:** Stacks / Queues / Two Pointers / etc.
+**Difficulty:** Easy / Medium / Hard
 
 ### Description
 
